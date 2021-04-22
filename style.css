@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body{
+    margin: 0;
+    font-family: nunito;
+}
+
+*{
+    margin: 0;
+}
+
+.menu{
+    background-color: #2d2d2d;
+    text-align: center;
+}
+
+.menu a{
+    color: white;
+    margin: 0 20px;
+    padding: 15px 0;
+    display: inline-block;
+}
+
+.header{
+    background-image: url(mac.jpg);
+    background-size: cover;
+    background-position-y: -200px;
+    text-align: center;
+    color: white;
+    padding: 400px 0;
+}
+
+.header button{
+    padding: 10px 20px;
+    background-color: #2d2d2d;
+    color: white;
+    border: none;
+}
+
+.about{
+    background-image: linear-gradient(to bottom, #000000, #171717, #2d2d2d);
+    color: rgb(214, 214, 214);
+    padding: 50px 0;
+}
+
+.about p{
+    display: inline-block;
+    width: 55%;
+    vertical-align: top;
+    text-align: justify;
+}
+
+.about img{
+    width: 35%;
+    border-radius: 15px;
+    margin-left: 3%;
+}
+
+.about h1{
+    text-align: center;
+}
+
+.about_content{
+    width: 70%;
+    margin: auto;
+}
+
+.team{
+    background-image: linear-gradient(to bottom, #2d2d2d, #3d3d3d, #4d4d4d);
+    color: white;
+    padding: 50px 0;
+}
+
+.team h1{
+    text-align: center;
+}
+
+.team_content{
+    margin: auto;
+    width: 80%;
+    display: block;
+}
+
+.member{
+    width: 20%;
+    padding: 10px;
+    box-shadow: 0 0 20px -5px black;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 0.7%;
+}
+
+.member .position{
+    color: gray;
+}
+
+.member img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.member button{
+    width: 100%;
+}
+
+button{
+    padding: 10px 0;
+    margin-top: 10px;
+    background: #2d2d2d;
+    color: white;
+    border: none;
+    box-shadow: 2px 2px 0px 2px rgba(37, 37, 37, 1);
+    outline: none;
+    transition: 0.2s;
+}
+
+button:active{
+    box-shadow: none;
+    transform: scale(0.97);
+}
+
+.tariffs{
+    background-image: linear-gradient(to bottom, #4d4d4d, #5d5d5d, #6d6d6d);
+}
+
+.tariffs h1{
+    color: white;
+    text-align: center;
+}
+
+.tariff{
+    display: inline-block;
+    list-style-type: none;
+    padding: none;
+    text-align: center;
+    width: 30% ;
+    box-shadow: 0 0 20px -5px black;
+    background-image: linear-gradient(to bottom, #3d3d3d, #4d4d4d);
+    color: white;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+.tariffs_content{
+    width: 70%;
+    margin: auto;
+}
+
+.tariff li{
+    padding: 10px 0;
+    border-bottom: 1px solid #2d2d2d;
+}
+
+ul{
+    padding: 0;
+}
+
+.tariff button{
+    padding: 10px 20px;
+}
+
+.tariff_name{
+    font-weight: 700;
+}
+
+.feedback{
+    background-image: linear-gradient(to bottom, #5d5d5d, #3d3d3d);
+    color: white;
+    padding: 50px 0;
+}
+
+.feedback_content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 60%;
+    margin: auto;
+}
+
+/* .feedback_map{
+    
+} */
+
+.feedback_contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe{
+    height: 300px;
+    border-radius: 15px;
+}
+
+.fs img{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.fs p{
+    margin: 5px 0;
+}
+
+.fs input{
+    padding: 5px;
+}
+
+@media(max-width: 550px){
+    .menu a{
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+
+    .header{
+        background-position-x: 50%;
+        background-position-y: center;
+        padding: 150px 0;
+    }
+    
+    .about_content p{
+        display: block;
+        width: 100%;
+    }
+
+    .about img{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    iframe{
+        width: 100%;
+    }
+
+    .feedback_content{
+        display: block;
+    }
+
+    .member{
+        display: block;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .tariff{
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media(max-width: 376px){
+    .menu a{
+        display: block;
+    }
+
+    .feedback_content{
+        display: block;
+    }
+
+    .feedback_map iframe{
+        width: 100%;
+    }
+
+    .header{
+        background-position-x: 50%;
+        background-position-y: center;
+        padding: 150px 0;
+    }
+
+    .about_content p{
+        display: block;
+        width: 100%;
+    }
+
+    .about_content img{
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .member{
+        display: block;
+        width: 100%;
+        margin: 10px auto;
+        box-sizing: border-box;
+    }
+
+    .tariff{
+        width: 100%;
+        display: block;
+        margin-top: 20px;
+    }
+
+    .feedback p{
+        font-size: 13px;
+    }
+
+    .fs input{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .fs button{
+        display: block;
+        margin: 10px auto;
+    }
+
+    .feedback_content{
+        width: 70%;
+    }
+}
